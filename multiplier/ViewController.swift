@@ -67,8 +67,9 @@ class ViewController: UIViewController {
     @IBAction func AddMultiplier(sender: AnyObject) {
         let newSum = multiplier + currentMultiplying
        
-        currentMultiplying+=multiplier
+        
          updateLbl(currentMultiplying, mul: multiplier, newSum: newSum)
+        currentMultiplying+=multiplier
         // taking in a current number thats being multiplied, the multiplier, and the new sum
         // The new sum always stays constant
         // the currentMultiplying changes based on the muliplier 
